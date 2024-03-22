@@ -24,21 +24,13 @@ packages <- c('vitae',     # The CV's LaTeX Template
              'here',      # Relative File Paths
              'readr',     # Data Loading
              'glue'      # String Manipulation
-packages <- c('vitae',     # The CV's LaTeX Template
-             'tibble',   # Data structure for tribbles
-             'here',      # Relative File Paths
-             'readr',     # Data Loading
-             'glue'      # String Manipulation
             )
 xfun::pkg_attach2(packages, message = FALSE)
 source(file = here("CV_data_20March2023.R"))
 ```
 
 # WORK EXPERIENCE
-# WORK EXPERIENCE
 
-```{r WORK EXPERIENCE}
-work |>
 ```{r WORK EXPERIENCE}
 work |>
   detailed_entries(
@@ -55,7 +47,6 @@ work |>
 # Education
 
 ```{r EDUCATION}
-edu |>
 edu |>
   detailed_entries(
     with = inst,
@@ -79,7 +70,7 @@ managing_expereinces |>
 
 # Soft Skills
 
-```{r R-SKILLS}
+```{r soft-skills}
 soft_skills |>
   detailed_entries(
     with = area,
@@ -91,26 +82,15 @@ soft_skills |>
 
 ```{r SKILLS}
 DS_skills |>
-DS_skills |>
   detailed_entries(
     with = area,
     what = skills
-  )
-```
-# R Skills
-
-```{r R-SKILLS}
-R_skills |>
-  detailed_entries(
-    with = area,
-    what = Package
   )
 ```
 
 # Honors
 
 ```{r HONORS}
-honors |>
 honors |>
   detailed_entries(
     with = area,

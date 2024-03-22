@@ -4,7 +4,7 @@ surname: Radhi
 position: "Senior Data Associate"
 address: "Iraq <-> Turkey"
 date: "`r format(Sys.time(), '%B %Y')`"
-profilepic: "../Riyadh.jpg"
+profilepic: "../resume_image/Riyadh.jpg"
 www: "www.riyadhradhi.com"
 email: "riyadhradhi0@gmail.com"
 linkedin: "www.linkedin.com/in/riyadh-radhi"
@@ -26,7 +26,7 @@ packages <- c('vitae',     # The CV's LaTeX Template
              'glue'      # String Manipulation
             )
 xfun::pkg_attach2(packages, message = FALSE)
-source(file = here("business_intelligence_data.R"))
+source(file = here("data","business_intelligence_data.R"))
 ```
 
 # WORK EXPERIENCE

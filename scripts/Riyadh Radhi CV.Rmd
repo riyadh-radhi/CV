@@ -1,15 +1,15 @@
 ---
 name: Riyadh
 surname: Radhi
-position: "Data Science Associate"
-address: "Istanbul Turkey"
-profilepic: "../Riyadh.jpg"
+position: "Senior Data Associate"
+address: "Iraq <-> Turkey"
+date: "`r format(Sys.time(), '%B %Y')`"
+profilepic: "../resume_image/Riyadh.jpg"
 www: "www.riyadhradhi.com"
 email: "riyadhradhi0@gmail.com"
 linkedin: "www.linkedin.com/in/riyadh-radhi"
-date: "`r format(Sys.time(), '%B %Y')`"
+aboutme: "Senior data analyst, researcher, and team leader with a focus on Business Analytics. Passionate about analyzing trends and behaviors, and answering questions with data. A team Leader to connect technical teams to non-technical stakeholders."
 headcolor: 015b85
-aboutme: "Senior researcher, R programmer, and statistician with a focus on Data Science and Business Analytics. Passionate about applying R-based solutions on daily basis to solve problems using statistical modeling, shinny dashboards, and analysis automation. A team Leader to connect technical teams to non-technical stakeholders."
 docname: Riyadh Radhi CV
 output: vitae::awesomecv
 ---
@@ -26,7 +26,7 @@ packages <- c('vitae',     # The CV's LaTeX Template
              'glue'      # String Manipulation
             )
 xfun::pkg_attach2(packages, message = FALSE)
-source(file = here("CV_data_14July2022.r"))
+source(file = here("data","business_intelligence_data.R"))
 ```
 
 # WORK EXPERIENCE
@@ -41,9 +41,10 @@ work |>
     where = where
   )
 
+
 ```
 
-# Education
+# Educational Background
 
 ```{r EDUCATION}
 edu |>
@@ -53,25 +54,6 @@ edu |>
     why = detail,
     when = glue::glue("{startYear} --> {endYear}",.na = ""),
     where = where
-  )
-```
-
-# Data Analysis Skills
-
-```{r SKILLS}
-DS_skills |>
-  detailed_entries(
-    with = area,
-    what = skills
-  )
-```
-# R Skills
-
-```{r R-SKILLS}
-R_skills |>
-  detailed_entries(
-    with = area,
-    what = Package
   )
 ```
 
